@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Jiaxing Zheng"
   avatar           : "profile.png"
-  bio              : "A phD Student in Institute of Cyber Science and Technology in Shanghai Jiao Tong University"
-  location         : "Shanghai"
+  bio              : "Shanghai Jiao Tong University"
+  location         : "China Shanghai"
   employer         :
   pubmed           : 
   googlescholar    : 
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "starkkkk"
+  github           : "https://github.com/starkkkk"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
