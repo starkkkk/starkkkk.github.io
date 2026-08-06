@@ -149,6 +149,7 @@ img {
 
 .hero__portrait {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   border: 1px solid var(--line-strong);
   object-fit: cover;
