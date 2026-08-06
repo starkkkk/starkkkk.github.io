@@ -22,7 +22,7 @@ page_class: home
     </div>
 
     <div class="hero__portrait-wrap">
-      <img class="hero__portrait" src="{{ base_path }}/images/profile-720.jpg" alt="Portrait of Jiaxing Zheng" width="686" height="960" fetchpriority="high">
+      <img class="hero__portrait" src="{{ base_path }}/images/profile-720.jpg" alt="Portrait of Jiaxing Zheng" width="686" fetchpriority="high">
       <div class="portrait-caption"><span>Jiaxing Zheng</span><span>Beijing · 2026</span></div>
     </div>
   </div>
