@@ -1,16 +1,64 @@
 ---
-layout: archive
+layout: profile
 title: "Publications"
 permalink: /publications/
-author_profile: true
+excerpt: "Peer-reviewed publications and ongoing doctoral research by Jiaxing Zheng."
+page_class: publications
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+<header class="page-hero">
+  <div class="shell">
+    <p class="page-kicker">Research archive</p>
+    <h1>Publications.</h1>
+    <p class="page-lede">Peer-reviewed work from my Ph.D. on large language models, information diffusion, social simulation, and graph optimization.</p>
+  </div>
+</header>
 
-{% include base_path %}
+<div class="page-content">
+  <div class="shell">
+    <section class="publication-group" aria-labelledby="published-heading">
+      <div class="group-heading">
+        <h2 id="published-heading">Published &amp; accepted</h2>
+        <span>Newest first</span>
+      </div>
+      <ol class="publication-list">
+        {% for publication in site.data.publications %}
+          {% if publication.status == "published" %}
+            <li class="publication">
+              <div class="publication__year">{{ publication.year }}</div>
+              <div>
+                <h3>{{ publication.title }}</h3>
+                <p class="publication__authors">{{ publication.authors }}</p>
+                <p class="publication__venue">{{ publication.venue }}</p>
+                <p class="publication__description">{{ publication.description }}</p>
+              </div>
+              {% if publication.url %}<a class="publication__arrow" href="{{ publication.url }}" aria-label="Open {{ publication.title }}">↗</a>{% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+    <section class="publication-group" aria-labelledby="ongoing-heading">
+      <div class="group-heading">
+        <h2 id="ongoing-heading">Ongoing research</h2>
+        <span>No venue claim</span>
+      </div>
+      <ol class="publication-list">
+        {% for publication in site.data.publications %}
+          {% if publication.status == "ongoing" %}
+            <li class="publication">
+              <div class="publication__year">Current</div>
+              <div>
+                <h3>{{ publication.title }}</h3>
+                <p class="publication__authors">{{ publication.authors }}</p>
+                <p class="publication__venue">{{ publication.venue }}</p>
+                <p class="publication__description">{{ publication.description }}</p>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+</div>

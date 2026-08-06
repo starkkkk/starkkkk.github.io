@@ -1,0 +1,72 @@
+- id: rolesimllm
+  selected: true
+  status: published
+  kind: Journal article
+  project: RoleSimLLM
+  title: "RoleSimLLM: Towards Large-Scale and Comprehensive Social Propagation Simulation via Role-Based LLM-Driven Agents"
+  authors: "<strong>Jiaxing Zheng</strong>, Changqing Li, Peng Wu, Li Pan"
+  venue: "Information Processing & Management, 63(5), 104689"
+  year: 2026
+  url: "https://doi.org/10.1016/j.ipm.2026.104689"
+  description: "A role-driven multi-agent framework that makes million-scale social propagation simulation practical by replacing per-user LLM calls with shared role simulators and graph-based interaction modeling."
+  result: "1% of the computation time used by per-user LLM baselines"
+
+- id: casllm
+  selected: true
+  status: published
+  kind: Conference paper
+  project: CasLLM
+  title: "Text and Metadata Matter: A Textual Enhanced Cascade Prediction Model Based on LLM"
+  authors: "<strong>Jiaxing Zheng</strong>, Peng Wu, Li Pan"
+  venue: "IEEE International Conference on Multimedia and Expo (ICME)"
+  year: 2026
+  description: "An interpretable cascade-prediction model that uses LLMs to uncover propagation signals in a post's topic, content, and audience metadata before rich interaction histories exist."
+  result: "Earlier, more interpretable cascade forecasts"
+
+- id: tecp
+  selected: false
+  status: published
+  kind: Journal article
+  project: TECP
+  title: "TECP: Insight into Hybrid Propagation Factors from Prompt-Based LLMs for Comprehensive Cascade Prediction"
+  authors: "<strong>Jiaxing Zheng</strong>, Peng Wu, Li Pan"
+  venue: "Information Processing & Management, 63(8), 104966"
+  year: 2026
+  url: "https://doi.org/10.1016/j.ipm.2026.104966"
+  description: "A text-factor collaboration model that turns LLM-extracted communication factors into propagation-aware representations for sequence-free and sequence-based cascade prediction."
+  result: "+15.6% Macro-F1 without cascade sequences"
+
+- id: dominant-coverage
+  selected: true
+  status: published
+  kind: Journal article
+  project: Dominant Coverage
+  title: "Dominant Coverage for Target Users at the Lowest Cost under Competitive Propagation in Social Networks"
+  authors: "<strong>Jiaxing Zheng</strong>, Li Pan"
+  venue: "Computer Networks, 226, 109693"
+  year: 2023
+  url: "https://doi.org/10.1016/j.comnet.2023.109693"
+  description: "A scalable optimization method for achieving dominant coverage among target users while minimizing seed cost under competitive information propagation."
+  result: "Validated across seven real and synthetic networks"
+
+- id: multi-level
+  selected: false
+  status: published
+  kind: Conference paper
+  project: Neural Hawkes Process
+  title: "Multi-Level Representation Learning with Neural Hawkes Process for Information Diffusion Prediction"
+  authors: "Jinyi Zhang, <strong>Jiaxing Zheng</strong>, Peng Wu, Li Pan"
+  venue: "EAI CollaborateCom, pp. 238–256"
+  year: 2024
+  url: "https://doi.org/10.1007/978-3-031-93254-0_13"
+  description: "A multi-level representation approach to information diffusion prediction using a neural Hawkes process."
+
+- id: misinformation-mitigation
+  selected: false
+  status: ongoing
+  kind: Ongoing research
+  project: Bidirectional Threshold Intervention
+  title: "Towards More Realistic Misinformation Mitigation via Bidirectional Threshold Intervention in Social Networks"
+  authors: "<strong>Jiaxing Zheng</strong> et al."
+  venue: "Under review"
+  description: "A reinforcement-learning approach that mitigates misinformation by adjusting the acceptance thresholds of key users instead of forcing node activation."
