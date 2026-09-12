@@ -76,26 +76,9 @@ img {
 
 .site-header__inner {
   display: flex;
-  min-height: 66px;
+  min-height: 58px;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.wordmark {
-  display: inline-flex;
-  align-items: center;
-  color: var(--heading);
-  font-family: var(--serif);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  text-decoration: none;
-}
-
-.wordmark:hover {
-  color: var(--heading);
-  text-decoration: none;
+  justify-content: flex-end;
 }
 
 .site-nav {
@@ -699,7 +682,7 @@ img {
   }
 
   .site-header__inner {
-    min-height: 60px;
+    min-height: 54px;
   }
 
   .site-nav {
