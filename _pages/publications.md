@@ -22,20 +22,23 @@ page_class: publications
         <span>Newest first</span>
       </div>
       <ol class="publication-list">
-        {% for publication in site.data.publications %}
-          {% if publication.status == "published" or publication.status == "accepted" %}
-            <li class="publication">
-              <div class="publication__year">{{ publication.year }}</div>
-              <div>
-                <h3>{{ publication.title }}</h3>
-                <p class="publication__authors">{{ publication.authors }}</p>
-                <p class="publication__venue">{{ publication.venue }}</p>
-                <p class="publication__description">{{ publication.description }}</p>
-                {% if publication.code_url %}<p class="publication__links"><a href="{{ publication.code_url }}">Code ↗</a></p>{% endif %}
-              </div>
-              {% if publication.url %}<a class="publication__arrow" href="{{ publication.url }}" aria-label="Open {{ publication.title }}">↗</a>{% endif %}
-            </li>
-          {% endif %}
+        {% assign publication_years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+        {% for year_group in publication_years %}
+          {% for publication in year_group.items %}
+            {% if publication.status == "published" or publication.status == "accepted" %}
+              <li class="publication">
+                <div class="publication__year">{{ publication.year }}</div>
+                <div>
+                  <h3>{{ publication.title }}</h3>
+                  <p class="publication__authors">{{ publication.authors }}</p>
+                  <p class="publication__venue">{{ publication.venue }}</p>
+                  <p class="publication__description">{{ publication.description }}</p>
+                  {% if publication.code_url %}<p class="publication__links"><a href="{{ publication.code_url }}">Code ↗</a></p>{% endif %}
+                </div>
+                {% if publication.url %}<a class="publication__arrow" href="{{ publication.url }}" aria-label="Open {{ publication.title }}">↗</a>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       </ol>
     </section>
