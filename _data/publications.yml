@@ -1,3 +1,16 @@
+- id: socioalign
+  selected: false
+  status: accepted
+  kind: Conference paper
+  project: SocioAlign
+  title: "SocioAlign: Efficient Social Media User Simulation Via Target-Conditioned Behavioral Policy Learning"
+  authors: "Feixiang Shu, <strong>Jiaxing Zheng</strong>, Conghui Zheng, Li Pan"
+  venue: "IEEE International Conference on Data Mining (ICDM)"
+  year: 2026
+  description: "A target-conditioned behavioral policy learning framework that compresses long, multimodal user histories into compact policy vectors for efficient personalized action prediction and reaction-text generation."
+  result: "Fewer trainable parameters than LoRA and lower inference cost than long-context baselines"
+  code_url: "https://github.com/sfmoraa/SocioAlign"
+
 - id: rolesimllm
   selected: true
   status: published

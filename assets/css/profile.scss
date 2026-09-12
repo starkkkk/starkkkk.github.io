@@ -540,7 +540,8 @@ img {
 
 .publication__authors,
 .publication__venue,
-.publication__description {
+.publication__description,
+.publication__links {
   max-width: 850px;
   margin: 5px 0 0;
   color: var(--muted);
@@ -551,6 +552,10 @@ img {
   color: var(--text);
   font-style: italic;
   font-weight: 400;
+}
+
+.publication__links {
+  font-size: 13px;
 }
 
 .publication__arrow {

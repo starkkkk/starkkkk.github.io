@@ -23,7 +23,7 @@ page_class: publications
       </div>
       <ol class="publication-list">
         {% for publication in site.data.publications %}
-          {% if publication.status == "published" %}
+          {% if publication.status == "published" or publication.status == "accepted" %}
             <li class="publication">
               <div class="publication__year">{{ publication.year }}</div>
               <div>
@@ -31,6 +31,7 @@ page_class: publications
                 <p class="publication__authors">{{ publication.authors }}</p>
                 <p class="publication__venue">{{ publication.venue }}</p>
                 <p class="publication__description">{{ publication.description }}</p>
+                {% if publication.code_url %}<p class="publication__links"><a href="{{ publication.code_url }}">Code ↗</a></p>{% endif %}
               </div>
               {% if publication.url %}<a class="publication__arrow" href="{{ publication.url }}" aria-label="Open {{ publication.title }}">↗</a>{% endif %}
             </li>
