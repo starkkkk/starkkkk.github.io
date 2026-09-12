@@ -1,5 +1,5 @@
 - id: socioalign
-  selected: false
+  selected: true
   status: accepted
   kind: Conference paper
   project: SocioAlign

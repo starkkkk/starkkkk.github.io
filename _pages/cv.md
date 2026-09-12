@@ -57,7 +57,6 @@ page_class: cv
         <article class="focus-card"><span class="focus-card__label">LLM agents</span><h3>RoleSimLLM</h3><p>Efficient, role-driven multi-agent simulation for million-scale social propagation.</p></article>
         <article class="focus-card"><span class="focus-card__label">Cascade prediction</span><h3>CasLLM</h3><p>Early and interpretable propagation forecasting from source text and metadata.</p></article>
         <article class="focus-card"><span class="focus-card__label">Graph optimization</span><h3>Dominant Coverage</h3><p>Cost-efficient intervention under competitive information propagation.</p></article>
-        <article class="focus-card"><span class="focus-card__label">Deep reinforcement learning</span><h3>Bidirectional Intervention</h3><p>Realistic misinformation mitigation through user acceptance-threshold adjustment.</p></article>
       </div>
     </section>
 
