@@ -12,7 +12,7 @@ page_class: home
       <div class="availability">Based in Beijing</div>
       <p class="eyebrow">Algorithm Engineer · ByteDance</p>
       <h1>Jiaxing Zheng.</h1>
-      <p class="hero__role">I build <span>AI agent applications</span>.</p>
+      <p class="hero__role">I develop <span>agent harnesses for real-world AI systems</span>.</p>
       <p class="hero__detail">Currently working at ByteDance in Beijing. My earlier doctoral research at Shanghai Jiao Tong University focused on social network information diffusion.</p>
       <div class="action-row">
         <a class="button button--primary" href="mailto:{{ site.author.email }}">Email me <span aria-hidden="true">↗</span></a>
