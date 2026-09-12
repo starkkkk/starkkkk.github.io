@@ -85,23 +85,17 @@ img {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   color: var(--heading);
-  font-size: 16px;
-  font-weight: 650;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   text-decoration: none;
 }
 
 .wordmark:hover {
   color: var(--heading);
   text-decoration: none;
-}
-
-.wordmark__mark {
-  color: var(--link);
-  font-family: var(--serif);
-  font-size: 17px;
-  font-weight: 700;
 }
 
 .site-nav {
@@ -706,10 +700,6 @@ img {
 
   .site-header__inner {
     min-height: 60px;
-  }
-
-  .wordmark__name {
-    display: none;
   }
 
   .site-nav {
