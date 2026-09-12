@@ -2,7 +2,7 @@
 layout: profile
 permalink: /
 title: "Jiaxing Zheng — Algorithm Engineer"
-excerpt: "Algorithm Engineer at ByteDance working on AI agent applications. Ph.D. from Shanghai Jiao Tong University."
+excerpt: "Algorithm Engineer at ByteDance developing agent harnesses for real-world AI systems. Ph.D. from Shanghai Jiao Tong University."
 page_class: home
 ---
 
@@ -13,10 +13,9 @@ page_class: home
       <p class="eyebrow">Algorithm Engineer · ByteDance</p>
       <h1>Jiaxing Zheng.</h1>
       <p class="hero__role">I develop <span>agent harnesses for real-world AI systems</span>.</p>
-      <p class="hero__detail">Currently working at ByteDance in Beijing. My earlier doctoral research at Shanghai Jiao Tong University focused on social network information diffusion.</p>
+      <p class="hero__detail">My doctoral research focused on predicting, simulating, and optimizing information diffusion in social networks.</p>
       <div class="action-row">
         <a class="button button--primary" href="mailto:{{ site.author.email }}">Email me <span aria-hidden="true">↗</span></a>
-        <a class="button" href="{{ base_path }}/cv/">View CV</a>
         <a class="button" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
       </div>
     </div>
@@ -32,10 +31,9 @@ page_class: home
   <div class="shell">
     <div class="section-heading">
       <div>
-        <p class="section-kicker">01 · Experience</p>
-        <h2 id="experience-title">Building in the real world.</h2>
+        <p class="section-kicker">01</p>
+        <h2 id="experience-title">Experience</h2>
       </div>
-      <p>My current work centers on AI agent applications. The roles below intentionally stay at a public, non-confidential level.</p>
     </div>
 
     <div class="timeline">
@@ -43,7 +41,6 @@ page_class: home
         <div class="timeline__meta"><span>Jul 2026 — Present</span><span>Beijing, China</span></div>
         <div class="timeline__content">
           <h3>Algorithm Engineer · ByteDance</h3>
-          <p>Building AI agent applications.</p>
         </div>
       </article>
 
@@ -58,48 +55,13 @@ page_class: home
   </div>
 </section>
 
-<section class="section" aria-labelledby="research-title">
-  <div class="shell">
-    <div class="section-heading">
-      <div>
-        <p class="section-kicker">02 · Ph.D. Research</p>
-        <h2 id="research-title">Information diffusion at scale.</h2>
-      </div>
-      <p>During my Ph.D., I studied how information spreads through social networks: how to predict it early, simulate it efficiently, and optimize interventions.</p>
-    </div>
-
-    <div class="research-grid">
-      {% assign selected_index = 0 %}
-      {% for publication in site.data.publications %}
-        {% if publication.selected %}
-          {% assign selected_index = selected_index | plus: 1 %}
-          <article class="research-card">
-            <span class="research-card__number">0{{ selected_index }}</span>
-            <h3>{{ publication.project }}</h3>
-            <p>{{ publication.description }}</p>
-            <p class="research-card__result">{{ publication.result }}</p>
-            {% if publication.url %}
-              <a class="research-card__link" href="{{ publication.url }}">Read paper <span aria-hidden="true">↗</span></a>
-            {% endif %}
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="action-row">
-      <a class="button" href="{{ base_path }}/publications/">All publications</a>
-    </div>
-  </div>
-</section>
-
 <section class="section" aria-labelledby="education-title">
   <div class="shell">
     <div class="section-heading">
       <div>
-        <p class="section-kicker">03 · Education</p>
-        <h2 id="education-title">Shanghai Jiao Tong University.</h2>
+        <p class="section-kicker">02</p>
+        <h2 id="education-title">Education</h2>
       </div>
-      <p>My doctoral training combined large language models, graph learning, reinforcement learning, and social computing.</p>
     </div>
 
     <div class="education-grid">
@@ -113,23 +75,6 @@ page_class: home
         <h3>B.S. · School of Cyber Science and Engineering</h3>
         <p>Shanghai Jiao Tong University</p>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="contact-title">
-  <div class="shell">
-    <div class="contact-panel">
-      <div>
-        <p class="section-kicker">04 · Contact</p>
-        <h2 id="contact-title">Let’s talk about agents, research, or something worth building.</h2>
-        <p>The best way to reach me is by email.</p>
-      </div>
-      <div class="contact-panel__links">
-        <a href="mailto:{{ site.author.email }}"><span>Email</span><span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/starkkkk"><span>GitHub</span><span aria-hidden="true">↗</span></a>
-        <a href="{{ site.author.googlescholar }}"><span>Google Scholar</span><span aria-hidden="true">↗</span></a>
-      </div>
     </div>
   </div>
 </section>
